@@ -19,11 +19,6 @@ public class ConnectionFactory {
         try {
             Connection c = ConnectionFactory.getConnectionMysql();
 
-            //Aviao av = new Aviao(1, "PP104", 10, ETipoAviao.legacy);
-
-            //DAO - inserir, editar, apagar, buscar, .....
-            //new AviaoDAO().inserir(av);
-
             System.out.println("Conectou no Banco");
         } catch (ClassNotFoundException e) {
             System.out.println("Driver não encontrado!!!");

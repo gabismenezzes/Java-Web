@@ -1,5 +1,7 @@
 package br.com.maternidade.model.pessoas;
 
+import br.com.maternidade.model.enums.ETipoParto;
+
 import java.time.LocalDateTime;
 
 public class Parturiente extends Pessoa{

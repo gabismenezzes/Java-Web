@@ -2,7 +2,7 @@ package br.com.maternidade.model.pessoas;
 
 import java.time.LocalDateTime;
 
-public class Pessoa {
+public abstract class Pessoa {
     private int id;
     private String nome, login, senha, email;
 
