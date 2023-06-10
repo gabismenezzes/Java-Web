@@ -69,8 +69,8 @@ public class ParturienteDAO implements IGenericDAO<Parturiente, Integer> {
     public Parturiente Buscar(Integer key) throws SQLException, ClassNotFoundException {
         Connection c = ConnectionFactory.getConnectionMysql();
         try {
-            String sql = "SELECT id, prefixo, numero_assentos, tipo_aviao\n" +
-                    "FROM maternidade.pessoa " +
+            String sql = "SELECT id, bebe, acompanhante, medico\n" +
+                    "FROM maternidade.parturiente " +
                     "WHERE id=?;\n";
 
             PreparedStatement pst = c.prepareStatement(sql);

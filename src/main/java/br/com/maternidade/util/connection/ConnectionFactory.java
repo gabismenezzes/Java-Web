@@ -9,7 +9,7 @@ public class ConnectionFactory {
     public static Connection getConnectionMysql() throws ClassNotFoundException, SQLException {
         String url = "jdbc:mysql://localhost:3306/maternidade";
         String login = "root";
-        String senha = "aluno";
+        String senha = "";
 
         Class.forName("com.mysql.cj.jdbc.Driver");
         return DriverManager.getConnection(url, login, senha);

@@ -80,7 +80,7 @@ public class PessoaDAO implements IGenericDAO <Pessoa, Integer> {
     public Pessoa Buscar(Integer key) throws SQLException, ClassNotFoundException {
         Connection c = ConnectionFactory.getConnectionMysql();
         try {
-            String sql = "SELECT id, prefixo, numero_assentos, tipo_aviao\n" +
+            String sql = "SELECT id, nome, login, senha, email\n" +
                     "FROM maternidade.pessoa " +
                     "WHERE id=?;\n";
 
