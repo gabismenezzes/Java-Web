@@ -4,6 +4,8 @@
  */
 package br.com.maternidade.view.Cadastro;
 
+import br.com.maternidade.view.FormPrincipal;
+
 /**
  *
  * @author maria
@@ -204,7 +206,11 @@ public class CadastroParturiente extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        // TODO add your handling code here:
+         dispose();
+
+    
+    FormPrincipal formPrincipal = new FormPrincipal();
+    formPrincipal.setVisible(true);
     }//GEN-LAST:event_jButton4ActionPerformed
 
     /**

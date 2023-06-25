@@ -156,21 +156,29 @@ public class LoginForm extends javax.swing.JFrame {
         null, new Bebe(), new Acompanhante(), med);
 
 if (med.getLogin().equals(jTextField1.getText()) &&
-        med.getSenha().equals(jTextField2.getText())) {
+            med.getSenha().equals(jTextField2.getText())) {
 
-    user = med;
-    setVisible(false);
+        user = med;
+        setVisible(false);
+
+        // Redirecionar para a página principal
+        FormPrincipal principalForm = new FormPrincipal();
+        principalForm.setVisible(true);
 
 } else if (part.getLogin().equals(jTextField1.getText()) &&
-        part.getSenha().equals(jTextField2.getText())) {
+            part.getSenha().equals(jTextField2.getText())) {
 
-    user = part;
-    setVisible(false);
+        user = part;
+        setVisible(false);
 
-} else {
-    JOptionPane.showMessageDialog(null,
-            "Usuário não encontrado");
-}
+        // Redirecionar para a página principal
+        FormPrincipal principalForm = new FormPrincipal();
+        principalForm.setVisible(true);
+
+    } else {
+        JOptionPane.showMessageDialog(null,
+                "Usuário não encontrado.");
+    }
 
     }//GEN-LAST:event_jButton1ActionPerformed
 
